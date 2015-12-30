@@ -20,7 +20,7 @@ You can use whatever object you wish as event parameter;
 ### SUBSCRIBING
 
 To subscribe to an event annotate a method with [Subscribe] annotation. Subscription method must return void and only use one parameter.
-Below you can see an example of an subscription method that listened for events that pass LanistersSlainedEvent parameter.
+Below you can see an example of an subscription method that listens for events that pass LanistersSlainedEvent parameter.
 
     [Subscribe]
     public void WhateverNameYouWant(LanistersSlainedEvent e)
