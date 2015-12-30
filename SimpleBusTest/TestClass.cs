@@ -7,6 +7,9 @@ using SimpleEventBus;
 
 namespace SimpleBusTest
 {
+    /// <summary>
+    /// Test class that subscribes to two kinds of EventBus events. 
+    /// </summary>
     class TestClass : IDisposable
     {
         public TestClass()
@@ -19,13 +22,20 @@ namespace SimpleBusTest
             MainBus.Instance.Unregister(this);
         }
 
-
+        /// <summary>
+        /// Subscribe for events that pass ButtonClickBusEvent
+        /// </summary>
+        /// <param name="e"></param>
         [Subscribe]
         public void OnButtonClicked(ButtonClickBusEvent e)
         {
             Console.WriteLine("Button click event handeled in TestClass instance: " + this.ToString());
         }
 
+        /// <summary>
+        /// Subscribes for events that pass TextChangedBusEvent
+        /// </summary>
+        /// <param name="e"></param>
         [Subscribe]
         public void OnTextChangedEvent(TextChangedBusEvent e)
         {

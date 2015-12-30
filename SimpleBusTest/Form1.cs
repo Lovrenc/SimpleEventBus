@@ -29,7 +29,10 @@ namespace SimpleBusTest
             MainBus.Instance.Post(new ButtonClickBusEvent());
         }
 
-
+        /// <summary>
+        /// Subscribes to click events.
+        /// </summary>
+        /// <param name="e"></param>
         [Subscribe]
         public void OnButtonClicked(ButtonClickBusEvent e)
         {

@@ -7,6 +7,9 @@ using SimpleEventBus;
 
 namespace SimpleBusTest
 {
+    /// <summary>
+    /// Singleton EventBus class
+    /// </summary>
     class MainBus
     {
         private static readonly Bus instance = new Bus();
