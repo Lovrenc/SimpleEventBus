@@ -36,7 +36,9 @@ When `Register` is called, Bus will collect subscription functions and add them 
 To cancel the subscriptions you must call `Unregister`. You should also call `Unregister` when disposing of class.
 
 
+## Sample
 
+Solution also contains `SimpleBusSample` which is a Windows Forms project that enables you to add/remove `TestClass` objects, which subscribe to certain events, etc. All subscribe functions log to Console output.
 
 
 
