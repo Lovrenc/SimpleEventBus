@@ -58,6 +58,9 @@ namespace SimpleBusTest
 
         private void btnRemoveTestClasses_Click(object sender, EventArgs e)
         {
+            //This is a bit of an odd example, since we are unregistering instances of TestClass from here.
+            //Usually objects themselves are controlling when they don't want to listen anymore, but hence, this is onlye
+            //an example of how to use SimpleBus implementation.
             testclasses.ForEach(t => t.Dispose());
             testclasses.Clear();
             lblNoTestClasses.Text = "0";

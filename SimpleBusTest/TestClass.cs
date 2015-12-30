@@ -14,11 +14,13 @@ namespace SimpleBusTest
     {
         public TestClass()
         {
+            //Subscribe to the Event Bus
             MainBus.Instance.Register(this);
         }
 
         public void Dispose()
         {
+            //Unregister from the event bus; important so we release references and enable GC to collect;
             MainBus.Instance.Unregister(this);
         }
 

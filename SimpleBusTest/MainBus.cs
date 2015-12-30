@@ -8,7 +8,7 @@ using SimpleEventBus;
 namespace SimpleBusTest
 {
     /// <summary>
-    /// Singleton EventBus class
+    /// Singleton EventBus class, enables easy access to main bus instance
     /// </summary>
     class MainBus
     {

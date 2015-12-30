@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleEventBus", "SimpleEventBus\SimpleEventBus.csproj", "{BA4DCAFE-BCA5-4696-A9FC-DE687CDCD266}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleBusTest", "SimpleBusTest\SimpleBusTest.csproj", "{FD957512-1472-4BA8-988C-680AC3732F84}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleBusSample", "SimpleBusTest\SimpleBusSample.csproj", "{FD957512-1472-4BA8-988C-680AC3732F84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
